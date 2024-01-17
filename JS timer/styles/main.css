@@ -1,0 +1,93 @@
+body {
+  font-family: Quicksand, Arial;
+  background-color: rgb(251, 235, 217);
+}
+
+button {
+  font-family: Quicksand, Arial;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.stop-button,
+.reset-button,
+.start-button {
+  background-color: red;
+  border: solid;
+  border-color: rgb(179, 44, 44);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 24px;
+  box-shadow: 5px 5px 5px rgb(182, 182, 182);
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.continue {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: opacity, 0.25s;
+}
+
+.start-button {
+  background-color: rgb(84, 183, 84);
+  border-color: green;
+}
+
+.continue:hover {
+  opacity: 0.5;
+}
+
+.continue:active {
+  opacity: 0.35;
+}
+
+.start-button:hover {
+  background-color: rgb(109, 197, 109);
+}
+
+.reset-button {
+  background-color: rgb(148, 40, 40);
+}
+
+.reset-button:hover {
+  background-color: rgb(169, 52, 52);
+}
+
+.stop-button:hover {
+  background-color: rgb(253, 55, 55);
+}
+
+.stop-button:active,
+.reset-button:active,
+.start-button:active {
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 5px rgb(182, 182, 182);
+}
+
+.reset-message {
+  color: rgb(169, 52, 52);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.warning {
+  font-size: 24px;
+  font-weight: bold;
+}
